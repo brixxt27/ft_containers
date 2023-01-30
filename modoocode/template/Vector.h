@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+
 template <typename T>
 class Vector
 {
@@ -26,6 +27,16 @@ private:
 	T*	mData;
 	int	mCapacity;
 	int	mLength;
+};
+
+struct Comp1
+{
+	bool	operator()(int a, int b) {return a > b;}
+};
+
+struct Comp2
+{
+	bool	operator()(int a, int b) {return a < b;}
 };
 
 template <typename T>
@@ -59,6 +70,6 @@ void	Vector<T>::push_back(T s)
 	mData[mLength] = s;
 	++mLength;
 }
-std::ostream&	operator<<(std::ostream& out, typename Vector<T>& rhs);
+//std::ostream&	operator<<(std::ostream& out, typename Vector<T>& rhs);
 
 #endif
