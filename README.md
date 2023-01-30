@@ -98,3 +98,5 @@ and https://cppreference.com/ as references. </b>
 ## Chapter 4: Bonus part
 - 추가 점수를 얻기 위해 마지막 하나의 container를 구현해야 한다.
 	- set: 그러나 이번엔 Red-Black tree 를 구현해야 한다.
+<img width="741" alt="image" src="https://user-images.githubusercontent.com/83959536/215407535-3601155b-f2e5-40ec-9b97-1bae78c1fe71.png">
+(레퍼런스의 레드블랙트리 블로그 참고)
