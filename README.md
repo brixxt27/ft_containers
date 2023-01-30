@@ -1,9 +1,9 @@
 # 전체 이슈 List: [Issue "To do"#1](https://github.com/brixxt27/ft_containers/issues/1)
 # References
-- Red–black tree: https://assortrock.com/87
 - gcc complier, c++98 vector: https://github.com/gcc-mirror/gcc/blob/54c1bf7801758caf2ff54917e79a8c239643061c/libstdc%2B%2B-v3/include/bits/stl_vector.h
 - sfinae, enable_if, 모두의코드: https://modoocode.com/255
 - yongmkim, exception safety: https://github.com/ecole42-yoma/ft_containers/wiki/Exception-Safety#classification
+- Red–black tree: https://assortrock.com/87
 
 # ft_containers
 ## C++ containers, easy mode
@@ -98,5 +98,6 @@ and https://cppreference.com/ as references. </b>
 ## Chapter 4: Bonus part
 - 추가 점수를 얻기 위해 마지막 하나의 container를 구현해야 한다.
 	- set: 그러나 이번엔 Red-Black tree 를 구현해야 한다.
+
 <img width="741" alt="image" src="https://user-images.githubusercontent.com/83959536/215407535-3601155b-f2e5-40ec-9b97-1bae78c1fe71.png">
 (레퍼런스의 레드블랙트리 블로그 참고)
