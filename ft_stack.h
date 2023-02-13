@@ -24,11 +24,8 @@ namespace ft
 		/**
 		 * Member functions
 		 */
-		//stack()
-		//	: c(Container())
-		//{
-		//}
 		explicit stack(const Container& cont = Container()) //This is also the default constructor. (until C++11)
+			: c(cont)
 		{
 		}
 		virtual ~stack()
@@ -104,11 +101,11 @@ namespace ft
 	/**
 	 * Non-member functions
 	 */
-	template<typename T, typename Container>
-	bool	operator==(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	{
-		//lhs.
-	}
+	// template<typename T, typename Container>
+	// bool	operator==(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	// {
+	// 	lhs.
+	// }
 	//template<typename T, typename Container>
 	//bool	operator!=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
 	//{
