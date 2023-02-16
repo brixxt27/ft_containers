@@ -4,6 +4,7 @@
 - sfinae, enable_if, 모두의코드: https://modoocode.com/255
 - yongmkim, exception safety: https://github.com/ecole42-yoma/ft_containers/wiki/Exception-Safety#classification
 - Red–black tree: https://assortrock.com/87
+- EA sports STL:  https://github.com/electronicarts/EASTL
 
 # ft_containers
 ## C++ containers, easy mode
