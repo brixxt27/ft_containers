@@ -98,34 +98,34 @@ namespace ft
 		c.pop_back();
 	}
 
-	/**
-	 * Non-member functions
-	 */
-	// template<typename T, typename Container>
-	// bool	operator==(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	// {
-	// 	lhs.
-	// }
-	//template<typename T, typename Container>
-	//bool	operator!=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	//{
-	//}
-	//template<typename T, typename Container>
-	//bool	operator<(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	//{
-	//}
-	//template<typename T, typename Container>
-	//bool	operator<=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	//{
-	//}
-	//template<typename T, typename Container>
-	//bool	operator>(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	//{
-	//}
-	//template<typename T, typename Container>
-	//bool	operator>=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	//{
-	//}
-}
+	///**
+	// * Non-member functions
+	// */
+	//// template<typename T, typename Container>
+	//// bool	operator==(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	//// {
+	//// 	lhs.
+	//// }
+	////template<typename T, typename Container>
+	////bool	operator!=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	////{
+	////}
+	////template<typename T, typename Container>
+	////bool	operator<(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	////{
+	////}
+	////template<typename T, typename Container>
+	////bool	operator<=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	////{
+	////}
+	////template<typename T, typename Container>
+	////bool	operator>(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	////{
+	////}
+	////template<typename T, typename Container>
+	////bool	operator>=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	////{
+	////}
+}	// namespace ft
 
 #endif
