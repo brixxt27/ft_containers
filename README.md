@@ -6,6 +6,42 @@
 - Red–black tree: https://assortrock.com/87
 - EA sports STL:  https://github.com/electronicarts/EASTL
 
+# Keyword
+- explicit specifier: 생성자가 명시적임을 지정한다. 즉, implicit conversions 와 copy-initialization 을 사용할 수 없다. explicit 지정자를 사용하지 않고 선언한 생성자는 converting constructor 를 호출한다.
+https://en.cppreference.com/w/cpp/language/explicit
+
+- implicit conversion: 암시적 형변환은 어떤 타입 T1 의 표현이 문맥에서 다른 타입을 허용하지 않지만, T2 를 허용할 때 발생된다.
+https://en.cppreference.com/w/cpp/language/implicit_conversion
+
+- copy-initialization: 다른 object로부터 하나의 object를 초기화한다. copy initialization 은 explicit constructor 를 고려하지 못한다.
+```
+Syntax
+T object = other;	(1)	
+T object = {other};	(2)	(until C++11)
+f(other)	(3)	
+return other;	(4)	
+throw object;
+catch (T object) (5)	
+T array[N] = {other-sequence};	(6)	
+
+ex1)
+T object = other;
+
+ex2)
+struct Exp { explicit Exp(const char*) {} }; // not convertible from const char*
+Exp e1("abc");  // OK
+Exp e2 = "abc"; // Error, copy-initialization does not consider explicit constructor
+ 
+struct Imp { Imp(const char*) {} }; // convertible from const char*
+Imp i1("abc");  // OK
+Imp i2 = "abc"; // OK
+```
+https://en.cppreference.com/w/cpp/language/copy_initialization
+
+- Converting contructor: explicit 지정자를 사용하지 않고 선언한 생성자는 converting constructor 를 호출한다.
+https://en.cppreference.com/w/cpp/language/converting_constructor
+
+
 # ft_containers
 ## C++ containers, easy mode
  Summay: 표준 C++ Containers 에 모든 구체적인 사용법이 있다. 너가 이들을 이해했는지를 확인하기 위하여, 이들을 다시 구현해보자! - Version: 5.2
