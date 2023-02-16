@@ -1,7 +1,6 @@
 #ifndef FT_STACK_H
 #define FT_STACK_H
 
-#include "ft_algorithm.h"
 // Replace std::vector to ft::vector
 #include <vector>
 
@@ -57,8 +56,11 @@ namespace ft
 		 */
 		void	push(const value_type& value);
 		void	pop();
-	}; // 
+	}; // class stack
 
+	/**
+	 * stack
+	*/
 	template<typename T, typename Container>
 	typename stack<T, Container>::reference
 	stack<T, Container>::top()
@@ -98,34 +100,46 @@ namespace ft
 		c.pop_back();
 	}
 
-	///**
-	// * Non-member functions
-	// */
-	//// template<typename T, typename Container>
-	//// bool	operator==(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	//// {
-	//// 	lhs.
-	//// }
-	////template<typename T, typename Container>
-	////bool	operator!=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	////{
-	////}
-	////template<typename T, typename Container>
-	////bool	operator<(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	////{
-	////}
-	////template<typename T, typename Container>
-	////bool	operator<=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	////{
-	////}
-	////template<typename T, typename Container>
-	////bool	operator>(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	////{
-	////}
-	////template<typename T, typename Container>
-	////bool	operator>=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
-	////{
-	////}
+	/**
+	 * Non-member functions
+	 */
+
+	template<typename T, typename Container>
+	bool	operator==(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	{
+		return lhs.c == rhs.c;
+	}
+
+	template<typename T, typename Container>
+	bool	operator!=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	{
+		return !(lhs.c == rhs.c);
+	}
+
+	template<typename T, typename Container>
+	bool	operator<(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	{
+		return (lhs.c < rhs.c);
+	}
+
+	template<typename T, typename Container>
+	bool	operator<=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	{
+		return !(rhs.c < lhs.c);
+	}
+
+	template<typename T, typename Container>
+	bool	operator>(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	{
+		return (rhs.c < lhs.c);
+	}
+
+	template<typename T, typename Container>
+	bool	operator>=(const stack<T, Container>& lhs, const stack<T, Container>& rhs)
+	{
+		return !(lhs.c < rhs.c);
+	}
+
 }	// namespace ft
 
-#endif
+#endif	// header include guard
