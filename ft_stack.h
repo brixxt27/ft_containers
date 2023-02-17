@@ -27,7 +27,7 @@ namespace ft
 			: c(cont)
 		{
 		}
-		virtual ~stack()
+		~stack()
 		{
 		}
 		stack&	operator=(const stack& rhs)
