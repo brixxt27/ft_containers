@@ -77,6 +77,8 @@ namespace ft
 		 */
 		bool empty() const;
 		size_type size() const;
+		size_type max_size() const;
+		
 
 		/**
 		 * Modifiers
