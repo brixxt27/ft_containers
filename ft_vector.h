@@ -78,17 +78,31 @@ namespace ft
 		bool empty() const;
 		size_type size() const;
 		size_type max_size() const;
-		
+		void reserve( size_type new_cap );
+		size_type capacity() const;
 
 		/**
 		 * Modifiers
 		 */
+		void clear();
+		iterator insert( const_iterator pos, const T& value );
+		iterator insert( const_iterator pos, size_type count, const T& value );
+		template< class InputIt >
+		iterator insert( const_iterator pos, InputIt first, InputIt last );
+		iterator erase( iterator pos );
+		iterator erase( iterator first, iterator last );
+		void push_back( const T& value );
+		void pop_back();
+		void resize( size_type count, T value = T() );
+		void swap( vector& other );
 
 	}; // class vector
 
 	/**
 	 * Non-member functions
 	 */
+	template<typename T, typename Alloc>
+	bool	operator==(const std::vector<T, Alloc>& lhs, const std::vector<T, Alloc>&rhs);
 
 } // namespace ft
 
