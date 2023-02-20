@@ -103,7 +103,17 @@ namespace ft
 	 */
 	template<typename T, typename Alloc>
 	bool	operator==(const std::vector<T, Alloc>& lhs, const std::vector<T, Alloc>&rhs);
-
+	template<typename T, typename Alloc>
+	bool	operator!=(const std::vector<T, Alloc>& lhs, const std::vector<T, Alloc>&rhs);
+	template<typename T, typename Alloc>
+	bool	operator<(const std::vector<T, Alloc>& lhs, const std::vector<T, Alloc>&rhs);
+	template<typename T, typename Alloc>
+	bool	operator<=(const std::vector<T, Alloc>& lhs, const std::vector<T, Alloc>&rhs);
+	template<typename T, typename Alloc>
+	bool	operator>(const std::vector<T, Alloc>& lhs, const std::vector<T, Alloc>&rhs);
+	template<typename T, typename Alloc>
+	bool	operator>=(const std::vector<T, Alloc>& lhs, const std::vector<T, Alloc>&rhs);
+	
 } // namespace ft
 
 #endif
