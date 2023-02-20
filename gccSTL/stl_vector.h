@@ -144,6 +144,9 @@ struct _Vector_base
 };    
 
 
+/**
+ * vector class 
+ */
 template <class _Tp, class _Alloc = allocator<_Tp> >
 class vector : protected _Vector_base<_Tp, _Alloc> 
 {

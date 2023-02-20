@@ -99,6 +99,30 @@ namespace ft
 	}; // class vector
 
 	/**
+	 * Member functions
+	 */
+	template<typename T, typename Alloc>
+	vector<T, Alloc>::vector()
+	{
+		
+	}
+
+	//vector(); // default constructor
+	//explicit vector( const Allocator& alloc ); // Constructs an empty container witth the given allocator alloc.
+	//explicit vector( size_type count, const T& value = T(), const Allocator& alloc = Allocator()); // Constructs the container with count copies of elements with value value.
+	//template< typename InputIt >
+	//vector( InputIt first, InputIt last, const Allocator& alloc = Allocator() ); // Constructs the container with the contents of the range [first, last)
+	//vector(const vector& other); // copy constructor
+
+	//~vector();
+
+	//vector&	operator=(const vector& rhs);
+	//void	assign(size_type count, const T& value);
+	//template<typename InputIt>
+	//void	assign(InputIt first, InputIt last);
+	//allocator_type	get_allocator() const;
+
+	/**
 	 * Non-member functions
 	 */
 	template<typename T, typename Alloc>
